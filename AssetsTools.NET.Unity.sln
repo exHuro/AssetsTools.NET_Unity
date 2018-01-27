@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssetsTools.NET.Unity", "AssetsTools.NET.Unity\AssetsTools.NET.Unity.csproj", "{A8370BA9-F5B0-4FB1-886F-491C51A52C1D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssetsTools.NET.Unity.Extra", "AssetsTools.NET.Unity.Extra\AssetsTools.NET.Unity.Extra.csproj", "{054E53F7-1C9C-4F50-86C4-88CA4382F618}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A8370BA9-F5B0-4FB1-886F-491C51A52C1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8370BA9-F5B0-4FB1-886F-491C51A52C1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8370BA9-F5B0-4FB1-886F-491C51A52C1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8370BA9-F5B0-4FB1-886F-491C51A52C1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{054E53F7-1C9C-4F50-86C4-88CA4382F618}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{054E53F7-1C9C-4F50-86C4-88CA4382F618}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{054E53F7-1C9C-4F50-86C4-88CA4382F618}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{054E53F7-1C9C-4F50-86C4-88CA4382F618}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {059246B9-30EF-48C3-B758-A10B24619972}
+	EndGlobalSection
+EndGlobal

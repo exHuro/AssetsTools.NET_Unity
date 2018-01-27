@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A8370BA9-F5B0-4FB1-886F-491C51A52C1D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AssetsTools.NET.Unity</RootNamespace>
+    <AssemblyName>AssetsTools.NET.Unity</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssetsFileFormat\AssetPPtr.cs" />
+    <Compile Include="AssetsBundleFileFormat\AssetsBundleBlockAndDirectoryList06.cs" />
+    <Compile Include="AssetsBundleFileFormat\AssetsBundleBlockInfo06.cs" />
+    <Compile Include="AssetsBundleFileFormat\AssetsBundleDirectoryInfo06.cs" />
+    <Compile Include="AssetsBundleFileFormat\AssetsBundleEntry.cs" />
+    <Compile Include="AssetsBundleFileFormat\AssetsBundleFile.cs" />
+    <Compile Include="AssetsBundleFileFormat\AssetsBundleFilePar.cs" />
+    <Compile Include="AssetsBundleFileFormat\AssetsBundleHeader03.cs" />
+    <Compile Include="AssetsBundleFileFormat\AssetsBundleHeader06.cs" />
+    <Compile Include="AssetsBundleFileFormat\AssetsBundleOffsetPair.cs" />
+    <Compile Include="AssetsBundleFileFormat\AssetsList.cs" />
+    <Compile Include="AssetsFileFormat\AssetFile.cs" />
+    <Compile Include="AssetsFileFormat\AssetFileInfo.cs" />
+    <Compile Include="AssetsFileFormat\AssetFileList.cs" />
+    <Compile Include="AssetsFileFormat\AssetsFile.cs" />
+    <Compile Include="AssetsFileFormat\AssetsFileDependency.cs" />
+    <Compile Include="AssetsFileFormat\AssetsFileDependencyList.cs" />
+    <Compile Include="AssetsFileFormat\AssetsFileHeader.cs" />
+    <Compile Include="AssetsFileFormat\AssetsFileReader.cs" />
+    <Compile Include="AssetsFileFormat\AssetsFileWriter.cs" />
+    <Compile Include="AssetsFileFormat\PreloadList.cs" />
+    <Compile Include="AssetsFileFormat\TypeField_07.cs" />
+    <Compile Include="AssetsFileFormat\TypeField_0D.cs" />
+    <Compile Include="AssetsFileFormat\TypeTree.cs" />
+    <Compile Include="AssetsFileFormat\Type_07.cs" />
+    <Compile Include="AssetsFileFormat\Type_0D.cs" />
+    <Compile Include="AssetsFileTable\AssetFileInfoEx.cs" />
+    <Compile Include="AssetsFileTable\AssetsFileTable.cs" />
+    <Compile Include="AssetTypeClass\AssetTypeArray.cs" />
+    <Compile Include="AssetTypeClass\AssetTypeByteArray.cs" />
+    <Compile Include="AssetTypeClass\AssetTypeInstance.cs" />
+    <Compile Include="AssetTypeClass\AssetTypeTemplateField.cs" />
+    <Compile Include="AssetTypeClass\AssetTypeValue.cs" />
+    <Compile Include="AssetTypeClass\AssetTypeValueField.cs" />
+    <Compile Include="AssetTypeClass\EnumValueTypes.cs" />
+    <Compile Include="ClassDatabaseFile\ClassDatabaseFileHeader.cs" />
+    <Compile Include="ClassDatabaseFile\ClassDatabaseFile.cs" />
+    <Compile Include="ClassDatabaseFile\ClassDatabaseFileString.cs" />
+    <Compile Include="ClassDatabaseFile\ClassDatabaseType.cs" />
+    <Compile Include="ClassDatabaseFile\ClassDatabaseTypeField.cs" />
+    <Compile Include="Compression\Lz4DecoderStream.cs" />
+    <Compile Include="Compression\LZMA\Common\CommandLineParser.cs" />
+    <Compile Include="Compression\LZMA\Common\CRC.cs" />
+    <Compile Include="Compression\LZMA\Common\InBuffer.cs" />
+    <Compile Include="Compression\LZMA\Common\OutBuffer.cs" />
+    <Compile Include="Compression\LZMA\Compress\LZMA\LzmaBase.cs" />
+    <Compile Include="Compression\LZMA\Compress\LZMA\LzmaDecoder.cs" />
+    <Compile Include="Compression\LZMA\Compress\LZMA\LzmaEncoder.cs" />
+    <Compile Include="Compression\LZMA\Compress\LZ\IMatchFinder.cs" />
+    <Compile Include="Compression\LZMA\Compress\LZ\LzBinTree.cs" />
+    <Compile Include="Compression\LZMA\Compress\LZ\LzInWindow.cs" />
+    <Compile Include="Compression\LZMA\Compress\LZ\LzOutWindow.cs" />
+    <Compile Include="Compression\LZMA\Compress\RangeCoder\RangeCoder.cs" />
+    <Compile Include="Compression\LZMA\Compress\RangeCoder\RangeCoderBit.cs" />
+    <Compile Include="Compression\LZMA\Compress\RangeCoder\RangeCoderBitTree.cs" />
+    <Compile Include="Compression\LZMA\ICoder.cs" />
+    <Compile Include="Compression\LZMA\SevenZipHelper.cs" />
+    <Compile Include="Extra\AssetHelper.cs" />
+    <Compile Include="Extra\AssetsManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
