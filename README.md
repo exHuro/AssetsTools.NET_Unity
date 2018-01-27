@@ -28,7 +28,7 @@ public void Sample() {
 	...
 	
     AssetFileInfoEx afi = assetsManager.initialTable.getAssetInfo(5);
-    AssetTypeInstance ati = manager.GetATI(assetsManager.file, afi);
+    AssetTypeInstance ati = assetsManager.GetATI(assetsManager.file, afi);
     
     MessageBox.Show(ati.GetBaseField().Get("m_Name").GetValue().AsString());
     
