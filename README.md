@@ -10,7 +10,7 @@ The easiest way to manage loading multiple files is to use AssetsManager:
 public AssetsManager assetsManager;
 public void Sample() {
 	string assetRootDir = "pathToFolderWithAssetsFile";
-	using (FileStream assetStream = new FileStream("pathToAssetsFile", FileMode.Open) {
+	using (FileStream assetStream = new FileStream("pathToAssetsFile", FileMode.Open)) {
 		assetsManager = new AssetsManager();
 		assetsManager.LoadAssets(assetStream, assetRootDir);
 		assetsManager.LoadClassFile(Path.Combine(Application.StartupPath, "cldb.dat"));
@@ -38,3 +38,4 @@ public void Sample() {
 		dep.file.Close();
 }
 ```
+[Chrck out the original here!](https://github.com/DerPopo/UABE)
